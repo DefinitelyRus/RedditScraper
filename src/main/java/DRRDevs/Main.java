@@ -24,7 +24,7 @@ public class Main {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Do you want to start? ");
 		String prompt = input.next();
-<<<<<<< HEAD
+
 		// if start, ask for name. else do nothing
 		if (prompt.equalsIgnoreCase("yes")) {
 			System.out.print("Enter name: ");
@@ -36,8 +36,5 @@ public class Main {
 		} else {
 			System.out.println("Do nothing");
 		}
-
-=======
->>>>>>> dc434db5745084750e006e2b6ccfb09f62bfd32f
 	}
 }

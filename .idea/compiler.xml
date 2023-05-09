@@ -9,8 +9,5 @@
         <module name="RedditScraper" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="RedditScraper" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>
