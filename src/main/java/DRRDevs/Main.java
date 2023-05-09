@@ -20,9 +20,9 @@ package DRRDevs;
 
 import java.util.Scanner;
 public class Main {
-	public static void askUserPrompt() {
+	public static boolean askUserPrompt() {
 		Scanner input = new Scanner(System.in);
-		System.out.println("Do you want to start? ");
+		System.out.print("Do you want to start? ");
 		String prompt = input.next();
 		if (prompt.equalsIgnoreCase("yes")) {
 			System.out.print("Enter name: ");
@@ -31,11 +31,17 @@ public class Main {
 			String player2Name = input.next();
 			System.out.println(player1Name);
 			System.out.println(player2Name);
+			return true;
 		} else {
 			System.out.println("Do nothing");
+			return false;
 		}
 	}
 	public static void main(String[] args) {
-		askUserPrompt();
+		if (askUserPrompt()) {
+			System.out.println("yes");
+		} else {
+			System.out.println("nope");
+		}
 	}
 }
