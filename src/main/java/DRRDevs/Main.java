@@ -20,10 +20,26 @@ package DRRDevs;
 
 import java.util.Scanner;
 public class Main {
+<<<<<<< Updated upstream
 	public static boolean askUserPrompt() {
+=======
+	public String choice(){
+		while(true){
+
+
+		}
+	}
+
+	public static void main(String[] args) {
+>>>>>>> Stashed changes
 		Scanner input = new Scanner(System.in);
 		System.out.print("Do you want to start? ");
 		String prompt = input.next();
+<<<<<<< Updated upstream
+=======
+
+		// if start, ask for name. else do nothing
+>>>>>>> Stashed changes
 		if (prompt.equalsIgnoreCase("yes")) {
 			System.out.print("Enter name: ");
 			String player1Name = input.next();
@@ -43,5 +59,12 @@ public class Main {
 		} else {
 			System.out.println("nope");
 		}
+<<<<<<< Updated upstream
+=======
+
+
+
+
+>>>>>>> Stashed changes
 	}
 }
