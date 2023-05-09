@@ -20,12 +20,10 @@ package DRRDevs;
 
 import java.util.Scanner;
 public class Main {
-	public static void main(String[] args) {
+	public static void askUserPrompt() {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Do you want to start? ");
 		String prompt = input.next();
-
-		// if start, ask for name. else do nothing
 		if (prompt.equalsIgnoreCase("yes")) {
 			System.out.print("Enter name: ");
 			String player1Name = input.next();
@@ -36,5 +34,8 @@ public class Main {
 		} else {
 			System.out.println("Do nothing");
 		}
+	}
+	public static void main(String[] args) {
+		askUserPrompt();
 	}
 }
