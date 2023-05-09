@@ -24,6 +24,5 @@ public class Main {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Do you want to start? ");
 		String prompt = input.next();
-
 	}
 }
